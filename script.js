@@ -7,7 +7,7 @@ let heartCount = 0;
 for (const heartBtn of heartBtns) {
     heartBtn.addEventListener("click", function () {
         heartCount++
-        document.getElementById("heart-btn-count").innerText = heartCount++;
+        document.getElementById("heart-btn-count").innerText = heartCount;
     })
 }
 
