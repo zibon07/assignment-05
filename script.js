@@ -84,7 +84,7 @@ let count = parseInt(copyCounter.innerText);
 for (const copyBtn of copyBtns) {
     const service = copyBtn.dataset.service
     copyBtn.addEventListener("click", function () {
-        const confirmed = confirm("Do ou want to copy this number: ", phoneNumbers[service])
+        const confirmed = confirm("Do you want to copy this number: ", phoneNumbers[service])
         if (confirmed) {
             navigator.clipboard.writeText(phoneNumbers[service])
         }
